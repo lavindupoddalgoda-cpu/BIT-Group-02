@@ -1,0 +1,32 @@
+{
+  "members": [
+    {
+      "name": "Ashan Perera",
+      "role": "CEO & Founder",
+      "bio": "10+ years in web development. Former Senior Engineer at WSO2. Passionate about building technology that makes a real impact.",
+      "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+      "linkedin": "https://linkedin.com"
+    },
+    {
+      "name": "Nimesha Silva",
+      "role": "Head of Design",
+      "bio": "Award-winning UI/UX designer with a background in cognitive psychology. Has designed products used by millions across South Asia.",
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "linkedin": "https://linkedin.com"
+    },
+    {
+      "name": "Kasun Rajapaksa",
+      "role": "Lead Developer",
+      "bio": "Full-stack engineer specializing in React, Node.js, and cloud architecture. Open source contributor with 5 years at BIT Group.",
+      "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
+      "linkedin": "https://linkedin.com"
+    },
+    {
+      "name": "Thilini Wickramasinghe",
+      "role": "Digital Marketing Lead",
+      "bio": "Google-certified digital marketer who has managed over $2M in ad spend. Expert in SEO, PPC, and growth hacking strategies.",
+      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "linkedin": "https://linkedin.com"
+    }
+  ]
+}
