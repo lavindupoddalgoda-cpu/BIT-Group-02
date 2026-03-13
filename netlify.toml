@@ -1,0 +1,51 @@
+[build]
+  publish = "."
+
+# ── Redirects ──────────────────────────────────────────────────────
+# Admin panel — must come FIRST before catch-all
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = true
+
+# IMPORTANT: Do NOT add a /* catch-all redirect.
+# It breaks CSS, JS, JSON, and the admin panel on static sites.
+# Netlify serves static files correctly without it.
+
+# ── Security Headers ───────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# ── Cache: JSON data files ─────────────────────────────────────────
+[[headers]]
+  for = "/_data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=60, stale-while-revalidate=300"
+
+# ── Cache: Uploaded media ──────────────────────────────────────────
+[[headers]]
+  for = "/uploads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ── Cache: CSS and JS ──────────────────────────────────────────────
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
