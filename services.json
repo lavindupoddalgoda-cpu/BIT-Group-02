@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "quote": "BIT Group completely transformed our online presence. Our new website loads in under 1.5 seconds and our leads have increased by 340% in the first three months. Absolutely world-class work.",
+      "name": "Priya Mendis",
+      "role": "CEO",
+      "company": "Mendis Holdings",
+      "rating": 5,
+      "avatar": ""
+    },
+    {
+      "quote": "The team at BIT Group understood our vision from day one. They delivered a stunning mobile app that our customers absolutely love. The UI/UX is on par with Silicon Valley products.",
+      "name": "Rahul Jayasinghe",
+      "role": "Founder",
+      "company": "QuickServe LK",
+      "rating": 5,
+      "avatar": ""
+    },
+    {
+      "quote": "Working with BIT Group was an absolute pleasure. Professional, responsive, and the end result exceeded all our expectations. Our e-commerce revenue doubled within 60 days of launch.",
+      "name": "Anisha Perera",
+      "role": "Marketing Director",
+      "company": "Ceylon Spice Co.",
+      "rating": 5,
+      "avatar": ""
+    },
+    {
+      "quote": "I've worked with agencies across the UK and Sri Lanka — BIT Group stands head and shoulders above the rest. Their technical expertise and design sensibility are exceptional.",
+      "name": "Marcus Thompson",
+      "role": "CTO",
+      "company": "Nexus Digital UK",
+      "rating": 5,
+      "avatar": ""
+    },
+    {
+      "quote": "BIT Group built our entire cloud infrastructure from scratch. Rock-solid uptime, lightning performance, and their support team is always just a message away. Couldn't recommend more highly.",
+      "name": "Dilshan Fernando",
+      "role": "Operations Manager",
+      "company": "EduTech Lanka",
+      "rating": 5,
+      "avatar": ""
+    }
+  ]
+}

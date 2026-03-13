@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Web Design & Development",
+    "slug": "web-design",
+    "category": "Web Development",
+    "shortDesc": "Stunning, high-performance websites that convert visitors into customers.",
+    "description": "We build pixel-perfect, fully responsive websites using modern HTML5, CSS3, and JavaScript. From corporate sites to complex web applications, every project is crafted with performance, SEO, and user experience at its core.",
+    "price": "From $999",
+    "image": "",
+    "specs": [
+      { "label": "Timeline", "value": "2–4 weeks" },
+      { "label": "Revisions", "value": "Unlimited during project" },
+      { "label": "Hosting Setup", "value": "Included" },
+      { "label": "SEO Optimization", "value": "On-page SEO included" },
+      { "label": "Support", "value": "3 months post-launch" }
+    ],
+    "featured": true,
+    "order": 1
+  },
+  {
+    "name": "Mobile App Development",
+    "slug": "mobile-apps",
+    "category": "Mobile Apps",
+    "shortDesc": "Native and cross-platform apps for iOS and Android that users love.",
+    "description": "From concept to App Store, we build mobile applications that are fast, intuitive, and beautifully designed. We specialize in React Native and Flutter for cross-platform apps, and native Swift/Kotlin for premium performance.",
+    "price": "From $3,499",
+    "image": "",
+    "specs": [
+      { "label": "Platforms", "value": "iOS & Android" },
+      { "label": "Framework", "value": "React Native / Flutter" },
+      { "label": "Timeline", "value": "6–12 weeks" },
+      { "label": "Backend", "value": "API + Admin Panel included" },
+      { "label": "App Store", "value": "Submission assistance" }
+    ],
+    "featured": true,
+    "order": 2
+  },
+  {
+    "name": "UI/UX Design",
+    "slug": "ui-ux-design",
+    "category": "UI/UX Design",
+    "shortDesc": "Research-driven design that delights users and drives business results.",
+    "description": "Great products start with great design. Our UX team conducts user research, creates wireframes, and delivers high-fidelity Figma prototypes that bring your vision to life before a single line of code is written.",
+    "price": "From $599",
+    "image": "",
+    "specs": [
+      { "label": "Deliverables", "value": "Wireframes + Prototypes + Design System" },
+      { "label": "Tool", "value": "Figma" },
+      { "label": "Timeline", "value": "1–3 weeks" },
+      { "label": "User Testing", "value": "Included in premium package" },
+      { "label": "Handoff", "value": "Developer-ready specs" }
+    ],
+    "featured": true,
+    "order": 3
+  },
+  {
+    "name": "E-Commerce Solutions",
+    "slug": "ecommerce",
+    "category": "E-Commerce",
+    "shortDesc": "Powerful online stores that sell 24/7 with seamless payment integration.",
+    "description": "We build high-converting e-commerce platforms on WooCommerce, Shopify, and custom stacks. From product catalog to checkout optimization, we ensure your store is built to maximize revenue.",
+    "price": "From $1,499",
+    "image": "",
+    "specs": [
+      { "label": "Platform", "value": "WooCommerce / Shopify / Custom" },
+      { "label": "Payments", "value": "PayHere, Stripe, PayPal" },
+      { "label": "Products", "value": "Unlimited" },
+      { "label": "Inventory", "value": "Management system included" },
+      { "label": "Analytics", "value": "Sales dashboard" }
+    ],
+    "featured": false,
+    "order": 4
+  },
+  {
+    "name": "Cloud & Infrastructure",
+    "slug": "cloud",
+    "category": "Cloud & Infrastructure",
+    "shortDesc": "Scalable, secure cloud infrastructure that grows with your business.",
+    "description": "We architect and manage cloud infrastructure on AWS, Google Cloud, and DigitalOcean. From serverless deployments to containerized microservices, we ensure your applications are fast, reliable, and cost-efficient.",
+    "price": "From $299/month",
+    "image": "",
+    "specs": [
+      { "label": "Providers", "value": "AWS, GCP, DigitalOcean" },
+      { "label": "Uptime", "value": "99.9% SLA" },
+      { "label": "Security", "value": "SSL, WAF, DDoS protection" },
+      { "label": "Backups", "value": "Daily automated" },
+      { "label": "Monitoring", "value": "24/7 uptime monitoring" }
+    ],
+    "featured": false,
+    "order": 5
+  },
+  {
+    "name": "SEO & Digital Marketing",
+    "slug": "seo-marketing",
+    "category": "Digital Marketing",
+    "shortDesc": "Data-driven campaigns that put your brand in front of the right audience.",
+    "description": "Our digital marketing team combines technical SEO, content strategy, and paid advertising to deliver measurable results. We help businesses rank higher, reach more customers, and grow revenue.",
+    "price": "From $399/month",
+    "image": "",
+    "specs": [
+      { "label": "Services", "value": "SEO, Google Ads, Social Media" },
+      { "label": "Reporting", "value": "Monthly detailed reports" },
+      { "label": "Platforms", "value": "Google, Meta, LinkedIn" },
+      { "label": "Contract", "value": "Month-to-month" },
+      { "label": "Support", "value": "Dedicated account manager" }
+    ],
+    "featured": false,
+    "order": 6
+  },
+  {
+    "name": "Custom Software Development",
+    "slug": "custom-software",
+    "category": "Custom Software",
+    "shortDesc": "Bespoke software solutions engineered for your unique business needs.",
+    "description": "When off-the-shelf software isn't enough, we build custom solutions. From ERP systems to industry-specific platforms, our engineering team delivers robust, scalable software that solves real business problems.",
+    "price": "Custom quote",
+    "image": "",
+    "specs": [
+      { "label": "Tech Stack", "value": "Node.js, Python, React, PostgreSQL" },
+      { "label": "Architecture", "value": "Microservices / Monolith" },
+      { "label": "Documentation", "value": "Full technical docs" },
+      { "label": "Testing", "value": "Unit, Integration, E2E" },
+      { "label": "Maintenance", "value": "Ongoing support available" }
+    ],
+    "featured": false,
+    "order": 7
+  },
+  {
+    "name": "Brand Identity Design",
+    "slug": "brand-identity",
+    "category": "UI/UX Design",
+    "shortDesc": "Memorable brand identities that tell your story and build lasting recognition.",
+    "description": "A powerful brand is the foundation of every successful business. We create complete visual identities including logos, color systems, typography, and brand guidelines that make you unforgettable.",
+    "price": "From $499",
+    "image": "",
+    "specs": [
+      { "label": "Deliverables", "value": "Logo, Colors, Typography, Guidelines" },
+      { "label": "Formats", "value": "AI, SVG, PNG, PDF" },
+      { "label": "Revisions", "value": "3 rounds included" },
+      { "label": "Timeline", "value": "1–2 weeks" },
+      { "label": "Brand Guide", "value": "20-page PDF included" }
+    ],
+    "featured": false,
+    "order": 8
+  }
+]
