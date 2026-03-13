@@ -1,0 +1,135 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  # ── Site Settings ─────────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "_data/site-settings.json"
+        format: json
+        fields:
+          - { label: "Brand Name", name: "brandName", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string", hint: "Include country code, e.g. 94771234567" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+              - { label: "Twitter/X URL", name: "twitter", widget: "string", required: false }
+          - { label: "Google Maps Embed URL", name: "mapsEmbed", widget: "string", required: false }
+          - { label: "Footer Copyright Text", name: "copyright", widget: "string" }
+
+  # ── Homepage Content ──────────────────────────────────────────────
+  - name: "homepage"
+    label: "🏠 Homepage"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "_data/hero.json"
+        format: json
+        fields:
+          - { label: "Hero Headline", name: "headline", widget: "string" }
+          - { label: "Hero Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Primary CTA Label", name: "ctaPrimary", widget: "string" }
+          - { label: "Primary CTA Link", name: "ctaPrimaryLink", widget: "string" }
+          - { label: "Secondary CTA Label", name: "ctaSecondary", widget: "string" }
+          - { label: "Secondary CTA Link", name: "ctaSecondaryLink", widget: "string" }
+      - name: "stats"
+        label: "Stats / Numbers Section"
+        file: "_data/stats.json"
+        format: json
+        fields:
+          - label: "Stats"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Number (final value)", name: "value", widget: "string", hint: "e.g. '150' — JS will count up to this" }
+              - { label: "Suffix", name: "suffix", widget: "string", hint: "e.g. '+' or 'K' or '%'" }
+              - { label: "Label", name: "label", widget: "string" }
+
+  # ── Services ─────────────────────────────────────────────────────
+  - name: "services"
+    label: "💻 Services"
+    file: "_data/services.json"
+    format: json
+    fields:
+      - label: "Services"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Service Name", name: "name", widget: "string" }
+          - { label: "Slug (URL key)", name: "slug", widget: "string", hint: "lowercase-with-hyphens" }
+          - { label: "Category", name: "category", widget: "select",
+              options: ["Web Development", "Mobile Apps", "UI/UX Design", "E-Commerce", "Cloud & Infrastructure", "Digital Marketing", "Custom Software"] }
+          - { label: "Short Description", name: "shortDesc", widget: "string" }
+          - { label: "Full Description", name: "description", widget: "text" }
+          - { label: "Price / Starting From", name: "price", widget: "string", hint: "e.g. 'From $999' or 'Contact for pricing'" }
+          - { label: "Service Image", name: "image", widget: "image", required: false }
+          - label: "Key Features / Specs"
+            name: "specs"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Feature Label", name: "label", widget: "string" }
+              - { label: "Feature Value", name: "value", widget: "string" }
+          - { label: "Featured on Homepage?", name: "featured", widget: "boolean", default: false }
+          - { label: "Sort Order", name: "order", widget: "number", default: 0 }
+
+  # ── Testimonials ─────────────────────────────────────────────────
+  - name: "testimonials"
+    label: "⭐ Testimonials"
+    file: "_data/testimonials.json"
+    format: json
+    fields:
+      - label: "Testimonials"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Quote", name: "quote", widget: "text" }
+          - { label: "Customer Name", name: "name", widget: "string" }
+          - { label: "Role / Title", name: "role", widget: "string" }
+          - { label: "Company", name: "company", widget: "string", required: false }
+          - { label: "Star Rating (1–5)", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
+          - { label: "Avatar Image", name: "avatar", widget: "image", required: false }
+
+  # ── Team Members ─────────────────────────────────────────────────
+  - name: "team"
+    label: "👥 Team"
+    file: "_data/team.json"
+    format: json
+    fields:
+      - label: "Team Members"
+        name: "members"
+        widget: "list"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "Job Title / Role", name: "role", widget: "string" }
+          - { label: "Short Bio", name: "bio", widget: "text" }
+          - { label: "Photo", name: "photo", widget: "image", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+
+  # ── FAQs ─────────────────────────────────────────────────────────
+  - name: "faqs"
+    label: "❓ FAQs"
+    file: "_data/faqs.json"
+    format: json
+    fields:
+      - label: "FAQ Items"
+        name: "items"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
